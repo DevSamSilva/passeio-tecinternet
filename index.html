@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buenas Viagens & Turismo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <header class="header" id="home">
+        <div class="header-inner">
+
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="20" height="20">
+                        <path
+                            d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                    </svg>
+                </div>
+                <span>Buenas Viagens!</span>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#passeios" class="nav-link">Passeios</a></li>
+                    <li><a href="#destinos" class="nav-link">Destinos</a></li>
+                    <li><a href="#avaliacoes" class="nav-link">Avaliações</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-busca">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" width="16" height="16">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.35-4.35" />
+                </svg>
+                <input type="text" placeholder="Buscar destinos..." />
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-conteudo">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Novos destinos disponíveis
+                </div>
+                <h1 class="hero-titulo">EXPLORE O<br>MUNDO!</h1>
+                <p class="hero-subtitulo">
+                    Descubra destinos incríveis com pacotes exclusivos e<br>
+                    experiências inesquecíveis. Sua próxima aventura<br>
+                    começa aqui.
+                </p>
+                <a href="#passeios" class="btn-hero">Saiba mais &rarr;</a>
+            </div>
+
+            <div class="busca-container">
+                <div class="busca-box">
+                    <div class="busca-campo">
+                        <label for="destino">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" width="14" height="14">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            PARA ONDE VAMOS?
+                        </label>
+                        <input type="text" id="destino" placeholder="Destino, cidade ou p..." />
+                    </div>
+                    <div class="busca-divider"></div>
+                    <div class="busca-campo">
+                        <label for="quando">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" width="14" height="14">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                            </svg>
+                            QUANDO?
+                        </label>
+                        <input type="date" id="quando" />
+                    </div>
+                    <div class="busca-divider"></div>
+                    <div class="busca-campo">
+                        <label for="retorno">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" width="14" height="14">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                            </svg>
+                            RETORNO
+                        </label>
+                        <input type="date" id="retorno" />
+                    </div>
+                    <button class="btn-pesquisar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" width="16" height="16">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.35-4.35" />
+                        </svg>
+                        Pesquisar
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="passeios" id="passeios">
+            <div class="secao-badge azul-claro">Destinos selecionados</div>
+            <h2 class="secao-titulo">Próximos passeios & destinos</h2>
+            <p class="secao-subtitulo">
+                Escolha entre os destinos mais desejados da Europa com<br>
+                nossos pacotes exclusivos e preços especiais.
+            </p>
+
+            <div class="destinos-grid" id="destinos">
+
+                <div class="card-destino">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?w=600&q=80"
+                            alt="Barcelona, Espanha" />
+                        <span class="card-badge azul">Mais procurado</span>
+                        <div class="card-rating">
+                            <span class="estrela">&#9733;</span> 4.9
+                        </div>
+                    </div>
+                    <div class="card-corpo">
+                        <div class="card-info">
+                            <div>
+                                <h3 class="card-cidade">Barcelona</h3>
+                                <p class="card-pais">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" width="12" height="12">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                    Espanha
+                                </p>
+                            </div>
+                            <div class="card-precos">
+                                <span class="preco-antigo">R$ 6.200</span>
+                                <span class="preco-atual">R$ 4.890</span>
+                            </div>
+                        </div>
+                        <p class="card-desc">Arquitetura modernista, praias vibrantes e gastronomia mediterrânea
+                            incomparável.</p>
+                        <a href="#" class="btn-card">Saiba mais &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card-destino">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=600&q=80"
+                            alt="Porto, Portugal" />
+                        <span class="card-badge verde">Oferta</span>
+                        <div class="card-rating">
+                            <span class="estrela">&#9733;</span> 4.8
+                        </div>
+                    </div>
+                    <div class="card-corpo">
+                        <div class="card-info">
+                            <div>
+                                <h3 class="card-cidade">Porto</h3>
+                                <p class="card-pais">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" width="12" height="12">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                    Portugal
+                                </p>
+                            </div>
+                            <div class="card-precos">
+                                <span class="preco-antigo">R$ 4.800</span>
+                                <span class="preco-atual">R$ 3.590</span>
+                            </div>
+                        </div>
+                        <p class="card-desc">Cidade encantadora com vinhos, azulejos históricos e o famoso vinho do
+                            Porto.</p>
+                        <a href="#" class="btn-card">Saiba mais &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card-destino">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1513581166391-887a96ddeafd?w=600&q=80"
+                            alt="Milão, Itália" />
+                        <div class="card-rating">
+                            <span class="estrela">&#9733;</span> 4.7
+                        </div>
+                    </div>
+                    <div class="card-corpo">
+                        <div class="card-info">
+                            <div>
+                                <h3 class="card-cidade">Milão</h3>
+                                <p class="card-pais">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" width="12" height="12">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                    Itália
+                                </p>
+                            </div>
+                            <div class="card-precos">
+                                <span class="preco-antigo">R$ 7.100</span>
+                                <span class="preco-atual">R$ 5.290</span>
+                            </div>
+                        </div>
+                        <p class="card-desc">Capital da moda mundial, arte renascentista e culinária italiana autêntica.
+                        </p>
+                        <a href="#" class="btn-card">Saiba mais &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card-destino">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&q=80"
+                            alt="Londres, Inglaterra" />
+                        <div class="card-rating">
+                            <span class="estrela">&#9733;</span> 4.8
+                        </div>
+                    </div>
+                    <div class="card-corpo">
+                        <div class="card-info">
+                            <div>
+                                <h3 class="card-cidade">Londres</h3>
+                                <p class="card-pais">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" width="12" height="12">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                    Inglaterra
+                                </p>
+                            </div>
+                            <div class="card-precos">
+                                <span class="preco-antigo">R$ 7.900</span>
+                                <span class="preco-atual">R$ 5.890</span>
+                            </div>
+                        </div>
+                        <p class="card-desc">Metrópole vibrante com história milenar, museus de classe mundial e cultura
+                            diversa.</p>
+                        <a href="#" class="btn-card">Saiba mais &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card-destino">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&q=80"
+                            alt="Lauterbrunnen, Suíça" />
+                        <span class="card-badge roxo">Premium</span>
+                        <div class="card-rating">
+                            <span class="estrela">&#9733;</span> 5
+                        </div>
+                    </div>
+                    <div class="card-corpo">
+                        <div class="card-info">
+                            <div>
+                                <h3 class="card-cidade">Lauterbrunnen</h3>
+                                <p class="card-pais">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" width="12" height="12">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                    Suíça
+                                </p>
+                            </div>
+                            <div class="card-precos">
+                                <span class="preco-antigo">R$ 9.800</span>
+                                <span class="preco-atual">R$ 7.490</span>
+                            </div>
+                        </div>
+                        <p class="card-desc">Vale dos Alpes com 72 cachoeiras, paisagens de tirar o fôlego e vilas
+                            encantadas.</p>
+                        <a href="#" class="btn-card">Saiba mais &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card-destino">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80"
+                            alt="Paris, França" />
+                        <span class="card-badge teal">Clássico</span>
+                        <div class="card-rating">
+                            <span class="estrela">&#9733;</span> 4.9
+                        </div>
+                    </div>
+                    <div class="card-corpo">
+                        <div class="card-info">
+                            <div>
+                                <h3 class="card-cidade">Paris</h3>
+                                <p class="card-pais">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" width="12" height="12">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                    França
+                                </p>
+                            </div>
+                            <div class="card-precos">
+                                <span class="preco-antigo">R$ 7.400</span>
+                                <span class="preco-atual">R$ 5.590</span>
+                            </div>
+                        </div>
+                        <p class="card-desc">A cidade luz com a Torre Eiffel, culinária sofisticada e moda de alto
+                            padrão.</p>
+                        <a href="#" class="btn-card">Saiba mais &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="avaliacoes" id="avaliacoes">
+            <div class="secao-badge amarelo">
+                <span class="badge-estrela">&#9733;</span>
+                Depoimentos reais
+            </div>
+            <h2 class="secao-titulo">Avaliações dos Clientes</h2>
+            <p class="secao-subtitulo">Veja o que nossos viajantes dizem sobre suas experiências conosco.</p>
+
+            <div class="avaliacao-card">
+                <div class="avaliacao-aspas">&#8221;</div>
+                <div class="avaliacao-estrelas">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+                <p class="avaliacao-texto">
+                    "A Buenas Viagens transformou minha viagem à Europa em uma experiência absolutamente
+                    mágica. Cada detalhe foi pensado com cuidado — do hotel boutique em Barcelona ao passeio
+                    de barco em Porto. Já estou planejando a próxima aventura com eles!"
+                </p>
+                <div class="avaliacao-rodape">
+                    <div class="avaliacao-cliente">
+                        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=100&q=80"
+                            alt="Patrícia Mendonça" class="avaliacao-foto" />
+                        <div>
+                            <p class="avaliacao-nome">Patrícia Mendonça</p>
+                            <p class="avaliacao-cargo">Jornalista</p>
+                        </div>
+                    </div>
+                    <div class="avaliacao-setas">
+                        <button class="seta-btn" aria-label="Anterior">&#8249;</button>
+                        <button class="seta-btn ativo" aria-label="Próximo">&#8250;</button>
+                    </div>
+                </div>
+                <div class="avaliacao-dots">
+                    <span class="dot ativo"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-num">12k+</span>
+                    <span class="stat-label">Viajantes felizes</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">98%</span>
+                    <span class="stat-label">Satisfação</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">50+</span>
+                    <span class="stat-label">Destinos</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-icone">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
+                    <path
+                        d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                </svg>
+            </div>
+            <h2 class="newsletter-titulo">Assine a nossa newsletter</h2>
+            <p class="newsletter-subtitulo">
+                Receba em primeira mão as melhores ofertas, destinos exclusivos e dicas de<br>
+                viagem diretamente no seu e-mail.
+            </p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Seu melhor e-mail" />
+                <button class="btn-enviar">Enviar</button>
+            </div>
+            <p class="newsletter-aviso">Sem spam. Cancele quando quiser. Seus dados estão seguros conosco.</p>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-inner">
+
+            <div class="footer-col footer-sobre">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18" height="18">
+                            <path
+                                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                        </svg>
+                    </div>
+                    <span>Buenas Viagens!</span>
+                </div>
+                <p class="footer-desc">
+                    Buenas Viagens & Turismo S.A.<br>
+                    Especialistas em experiências de viagem inesquecíveis desde 2010.
+                </p>
+                <ul class="footer-contato">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" width="14" height="14">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Av. Paulista, 1000 – Bela Vista<br>São Paulo – SP, 01310-100
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" width="14" height="14">
+                            <path
+                                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.01 2.21 2 2 0 012 .02h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z" />
+                        </svg>
+                        +55 (11) 3000-0000
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" width="14" height="14">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        contato@buenasviagens.com
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-col-titulo">NAVEGAÇÃO</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#passeios">Passeios</a></li>
+                    <li><a href="#destinos">Destinos</a></li>
+                    <li><a href="#avaliacoes">Avaliações</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-col-titulo">PARCEIROS</h4>
+                <ul class="footer-links">
+                    <li><a href="#">TripAdvisor</a></li>
+                    <li><a href="#">Booking.com</a></li>
+                    <li><a href="#">Airbnb</a></li>
+                    <li><a href="#">Decolar</a></li>
+                    <li><a href="#">Latam Airlines</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-col-titulo">REDES SOCIAIS</h4>
+                <ul class="footer-redes">
+                    <li>
+                        <a href="#" class="rede-link">
+                            <span class="rede-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" width="16" height="16">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                </svg>
+                            </span>
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="rede-link">
+                            <span class="rede-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" width="16" height="16">
+                                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                                </svg>
+                            </span>
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="rede-link">
+                            <span class="rede-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" width="16" height="16">
+                                    <path
+                                        d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                            </span>
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="rede-link">
+                            <span class="rede-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" width="16" height="16">
+                                    <path
+                                        d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z" />
+                                    <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+                                </svg>
+                            </span>
+                            YouTube
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>Buenas Viagens & Turismo S.A. &copy; Todos os direitos reservados 2024</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
