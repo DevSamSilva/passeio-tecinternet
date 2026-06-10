@@ -861,7 +861,7 @@ img {
 }
 
 .rede-link:hover .rede-icon {
-    background-color: var(--azul);
+    background-color: var(--verde);
     color: var(--branco);
 }
 
